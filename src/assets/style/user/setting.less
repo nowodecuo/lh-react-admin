@@ -1,0 +1,61 @@
+.baseView {
+  width: 100%;
+  display: flex;
+  padding-top: 12px;
+
+  :global {
+    .ant-legacy-form-item .ant-legacy-form-item-control-wrapper {
+      width: 100%;
+    }
+  }
+
+  .left {
+    flex: 1;
+  }
+  .right {
+    flex: 2;
+    padding-left: 104px;
+    
+    .avatar_content{
+      display: flex;
+
+      .avatar_content_left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .avatar_content_right{
+        flex: 2;
+      }
+    }
+    .avatar_title {
+      height: 22px;
+      margin-bottom: 8px;
+      color: @heading-color;
+      font-size: @font-size-base;
+      line-height: 22px;
+    }
+    .avatar {
+      width: 144px;
+      height: 144px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    .button_view {
+      width: 144px;
+      text-align: center;
+    }
+  }
+}
+
+.area_code {
+  width: 72px;
+}
+.phone_number {
+  width: 214px;
+}
